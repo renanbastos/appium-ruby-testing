@@ -1,0 +1,7 @@
+[caps]
+platformName = "Android"
+deviceName = "ASUS_Z017DC"
+platformVersion = "7.0"
+appPackage = "com.google.android.apps.flexbox"
+udid = "10.202.2.57"
+appActivity = "com.google.android.flexbox.MainActivity"
