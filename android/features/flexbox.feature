@@ -1,20 +1,22 @@
 # language: pt
 
-Funcionalidade: Manipular retângulos
+Funcionalidade: Mandar mensagens
     Como usuário do dispositivo Android
-    Eu quero manipular os retângulos
-    Para que eles adquiram um esquema de organizaçâo automático
+    Eu quero enviar mensagens pelo app messages
 
 Contexto: Aplicação está aberta
     Dado que a aplicação está aberta
 
-Cenário: Verificar estado inicial da aplicação
-  Então verifico que possuo 3 retângulos
+Cenário: Iniciar o chat
+  Então seleciono o botao iniciar chat
 
-Cenário: Incluir um novo retângulo
-    Quando incluo um novo retângulo
-    Então verifico que possuo 4 retângulos
+Cenário: Adiciono um numero para envio de mensagens
+#   Quando seleciono o espaço para inserir o numero
+  Então adiciono um numero para envio de mensagens
 
-Cenário: Excluir 2 retângulos
-    Quando excluo 2 retângulos existentes
-    Então verifico que possuo 2 retângulos
+Cenário: Selecionar o contato para envio da mensagem
+    Então seleciono o contato para envio da mensagem
+
+Cenário: Escrever o texto e mandar a mensagem
+    Quando escrevo a mensagem a ser enviada
+    Então envio a mensagem

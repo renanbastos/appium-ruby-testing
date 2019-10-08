@@ -1,20 +1,27 @@
 Dado("que a aplicação está aberta") do
-    @flexbox = FlexboxScreen.new
-  end
-
-
-  Quando("incluo um novo retângulo") do
-    @flexbox.selecionar("+")
-  end
-
-  Então("verifico que possuo {int} retângulos") do |int|
-    i = find_element(:id, 'com.google.android.apps.flexbox:id/flexbox_layout').find_elements(:class, 'android.widget.TextView').length
-    expect(int).to eq(i)
-  end
-
-  Quando("excluo {int} retângulos existentes") do |int|
-    for i in 1..int
-      @flexbox.selecionar("-")
+    @message = MessagesScreen.new
     end
 
+  Então("seleciono o botao iniciar chat") do
+    @message.selecionar("chat")
+    end
+
+  Quando("seleciono o espaço para inserir o numero") do
+    @message.selecionar("select")
+  end
+
+  Então("adiciono um numero para envio de mensagens") do
+    @message.selecionar("la")
+  end
+  
+  Então("seleciono o contato para envio da mensagem") do
+    @message.selecionar("usuario")
+  end
+
+  Quando("escrevo a mensagem a ser enviada") do
+    @message.selecionar("sms")
+  end
+  
+  Então("envio a mensagem") do
+    @message.selecionar("send")
   end
