@@ -1,4 +1,4 @@
-# Projeto de testes utilizando Appium para iOS e Android
+# Projeto de testes utilizando Appium para Android
 
 Teste de android usando o app flexbox que se encontra no link abaixo
 
