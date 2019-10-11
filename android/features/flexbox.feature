@@ -11,7 +11,6 @@ Cenário: Iniciar o chat
   Então seleciono o botao iniciar chat
 
 Cenário: Adiciono um numero para envio de mensagens
-#   Quando seleciono o espaço para inserir o numero
   Então adiciono um numero para envio de mensagens
 
 Cenário: Selecionar o contato para envio da mensagem
