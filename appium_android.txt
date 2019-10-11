@@ -1,7 +1,7 @@
 [caps]
 platformName = "Android"
-deviceName = "ASUS_Z017DC"
-platformVersion = "7.0"
-appPackage = "com.google.android.apps.messaging"
-udid = "H3AZB601Z086DKM"
-appActivity = "com.google.android.apps.messaging.ui.ConversationListActivity"
+deviceName = "SM-J500M"
+platformVersion = "6.0"
+appPackage = "com.android.mms"
+udid = "7b7403f6"
+appActivity = "com.android.mms.ui.ConversationComposer"
