@@ -15,7 +15,7 @@ class MessagesScreen
       case elemento
         when "chat" then find_element(:id, @chat).click
         when "select" then find_element(:id, @select).click
-        when "la" then find_element(:uiautomator, 'new UiSelector().text("Insira destinatários")').send_keys("240").press_keycode(66).manage.timeouts.implicit_wait = 5
+        when "la" then find_element(:uiautomator, 'new UiSelector().text("Insira destinatários")').send_keys("+240").press_keycode(66).manage.timeouts.implicit_wait = 5
         when "sms" then find_element(:id, @mensagem).send_keys("tech")
         when "send" then find_element(:id, @envia).click
       end

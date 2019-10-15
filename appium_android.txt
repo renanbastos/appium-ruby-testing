@@ -1,7 +1,0 @@
-[caps]
-platformName = "Android"
-deviceName = "SM-J500M"
-platformVersion = "6.0"
-appPackage = "com.android.mms"
-udid = "7b7403f6"
-appActivity = "com.android.mms.ui.ConversationComposer"
