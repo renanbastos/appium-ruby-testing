@@ -13,9 +13,8 @@ Cenário: Iniciar o chat
 Cenário: Adiciono um numero para envio de mensagens
   Então adiciono um numero para envio de mensagens
 
-Cenário: Selecionar o contato para envio da mensagem
-    Então seleciono o contato para envio da mensagem
+Cenário: Selecionar o contato e escrevo a mensagem
+    Então seleciono o contato e escrevo a mensagem
 
 Cenário: Escrever o texto e mandar a mensagem
-    Quando escrevo a mensagem a ser enviada
     Então envio a mensagem

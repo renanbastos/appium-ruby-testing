@@ -1,8 +1,8 @@
 [caps]
-automationName = "UiAutomator2"
-appPackage = "com.android.mms"
-appActivity = "com.android.mms.ui.ConversationComposer"
-deviceName = "SM-J500M"
-platformName = "Android"
-platformVersion = "6.0"
-udid = "7b7403f6"
+automationName = 'UiAutomator2'
+appPackage = 'com.android.mms'
+appActivity = 'com.android.mms.ui.ConversationComposer'
+deviceName = 'SM-J500M'
+platformName = 'Android'
+platformVersion = '6.0'
+udid = '7b7403f6'

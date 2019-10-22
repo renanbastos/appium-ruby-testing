@@ -1,27 +1,30 @@
-Dado("que a aplicação está aberta") do
-    @message = MessagesScreen.new
-    end
+# frozen_string_literal: true
 
-  Então("seleciono o botao iniciar chat") do
-    @message.selecionar("chat")
-    end
+Dado('que a aplicação está aberta') do
+  @message = MessagesScreen.new
+end
 
-  Quando("seleciono o espaço para inserir o numero") do
-    @message.selecionar("select")
-  end
+Então('seleciono o botao iniciar chat') do
+  # @message.open_chat('chat')
+  @message.open_chat
+end
 
-  Então("adiciono um numero para envio de mensagens") do
-    @message.selecionar("la")
-  end
-  
-  Então("seleciono o contato para envio da mensagem") do
-    @message.selecionar("usuario")
-  end
+Quando('seleciono o espaço para inserir o numero') do
+  # @message.selecionar('select')
+  @message.select_contact
+end
 
-  Quando("escrevo a mensagem a ser enviada") do
-    @message.selecionar("sms")
-  end
-  
-  Então("envio a mensagem") do
-    @message.selecionar("send")
-  end
+Então('adiciono um numero para envio de mensagens') do
+  # @message.selecionar('la')
+  @message.input_la
+end
+
+Então('seleciono o contato e escrevo a mensagem') do
+  # @message.selecionar('usuario')
+  @message.write_message
+end
+
+Então('envio a mensagem') do
+  # @message.selecionar('send')
+  @message.send_message
+end
